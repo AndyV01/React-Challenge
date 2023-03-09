@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import MenuBar from "../../components/MenuBar";
 import Sidebar from "../../components/Sidebar";
-import { padding } from "@mui/system";
+
 
 
 
@@ -85,12 +85,13 @@ const Dashboard = () => {
   
  
   return (
-    <div style={ { paddingTop: 80, paddingLeft:250 } }>
+    <div style={ { paddingTop: 80, paddingLeft:250, paddingRight:100 } }>
        <Sidebar alerts={alertas}  />
        <MenuBar/>
       <div>
         <h3>Usuario Administrador</h3>
         <h1>Alarms</h1>
+        <div className="info">
         <button>Name Filter</button>
         <button>Status Filter</button>
         <input
@@ -99,8 +100,9 @@ const Dashboard = () => {
           type="text"
           placeholder="Search..."
         />
+        </div>
       </div>
-      <table>
+      <table style={{width: 1170, textAlign:"center", border:"solid", marginTop: 10, marginBottom: 20}}>
         <TableHead sx={{ backgroundColor: "black", color: "white" }}>
           <tr>
             <th>Name</th>
@@ -112,6 +114,7 @@ const Dashboard = () => {
           </tr>
         </TableHead>
         <tbody>
+
           {results.map((result) => (
             <tr key={result.id}>
               <td>{result.name} </td>
@@ -180,6 +183,13 @@ const Dashboard = () => {
           </Button>
         </Box>
       </Modal>
+      <Button
+            sx={{ mb: 5, ml:120 }}
+            variant="outlined"
+            color="error"
+          >
+            Nueva Alarma
+          </Button>
     </div>
   );
 };

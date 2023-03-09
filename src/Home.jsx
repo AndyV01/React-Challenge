@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 import "./home.css";
 
 const Home = () => {
@@ -29,9 +30,10 @@ const Home = () => {
             setUser(e.target.myEmail.value);
           }}
         >
-          <input name="myEmail" placeholder="enter your email" />
+          <input name="myEmail" required="true" placeholder="enter your email" />
 
-          <button type="primary" htmlType="submit" block>
+
+          <button className="butt" type="primary" htmlType="submit" block>
             Login
           </button>
         </form>

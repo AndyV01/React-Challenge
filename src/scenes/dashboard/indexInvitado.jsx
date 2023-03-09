@@ -38,7 +38,7 @@ return (
     <MenuBar/>
       <h3>Usuario Invitado</h3>
       <div style={{display:"flex"}}>
-      <table>
+      <table style={{ textAlign:"center", border:"solid",  marginBottom: 20 }}>
         <TableHead sx={{ backgroundColor: "black", color: "white" }}>
           <tr>
             <th>Name</th>

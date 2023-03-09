@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom"
-import "./app.css"
+
 import Home from "./Home";
 import Dashboard from "./scenes/dashboard/index";
 import DashboardInvitado from "./scenes/dashboard/indexInvitado"

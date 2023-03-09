@@ -12,6 +12,7 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import { useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button'
 
 
 
@@ -69,7 +70,7 @@ sx={{
       </ListItem>
     ))}
   </List>
-  <button onClick={logout} style={{marginLeft:75}}>salir</button>
+  <Button onClick={logout} sx={{ml:8}} size="large" variant="outlined">Salir</Button>
 </Box>
 </Drawer>
     )

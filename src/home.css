@@ -4,7 +4,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: url("./images/alerta.jpg");
+    background: url("../src/scenes/images/alerta.jpg");
     background-size: cover;
 }
 .loginForm{

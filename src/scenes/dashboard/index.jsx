@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import TableHead from "@mui/material/TableHead";
-
+import Button from '@mui/material/Button';
 import MenuBar from "../../components/MenuBar";
 import Sidebar from "../../components/Sidebar";
 import Alert from "../../components/Alert";
@@ -144,7 +144,7 @@ const Dashboard = () => {
           ))}
         </tbody>
       </table>
-      <form onSubmit={handleSubmit} style={{ display:"flex", padding:20 }}>
+      <form onSubmit={handleSubmit} style={{ display:"flex", padding:20, backgroundColor:"grey" }}>
         <div>
           <input
             placeholder="Name..."
@@ -185,9 +185,9 @@ const Dashboard = () => {
             type="text"
           />
         </div>
-        <button type="submi" onClick={handleSubmit}>
+        <Button variant="contained" color="success" type="submi" onClick={handleSubmit}>
           add Alert
-        </button>
+        </Button>
       </form>
     </div>
   );

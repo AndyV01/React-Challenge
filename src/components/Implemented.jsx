@@ -2,7 +2,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
-import logo from "../images/alerta.jpg"
+import logo from "../scenes/images/alerta.jpg"
 
 export default function ComplexGrid() {
   return (

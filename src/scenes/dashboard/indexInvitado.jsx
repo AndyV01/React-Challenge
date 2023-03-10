@@ -4,7 +4,6 @@ import TableHead from "@mui/material/TableHead";
 import MenuBar from "../../components/MenuBar";
 import Sidebar from "../../components/Sidebar";
 import ComplexGrid from "../../components/Implemented";
-import { display } from "@mui/system";
 
 
 const DashboardInvitado = () => {
@@ -36,7 +35,7 @@ return (
     <div style={ { paddingTop: 80, paddingLeft:250 } }>
     <Sidebar alerts={alertas} />
     <MenuBar/>
-      <h3>Usuario Invitado</h3>
+      <h3>Guest user</h3>
       <div style={{display:"flex"}}>
       <table style={{ textAlign:"center", border:"solid",  marginBottom: 20 }}>
         <TableHead sx={{ backgroundColor: "black", color: "white" }}>
